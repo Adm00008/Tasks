@@ -230,5 +230,6 @@ plot(cars, xlim =c(10, 15))
 plot(cars, pch =2)
 data(mtcars)
 ?boxplot
-boxplot(mpg ~ cyl, data = mtcars)
+boxplot(mpg~ cyl, data = mtcars)
 hist(mtcars$mpg)
+setwd(" ")
