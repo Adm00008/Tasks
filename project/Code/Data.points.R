@@ -1,4 +1,4 @@
-setwd("/Users/adammcmillion/Desktop/Evolution/Tasks/Evolution project data")
+setwd("/Users/adammcmillion/Desktop/Evolution/Tasks")
 read.csv("data points.csv")
 Tree_DBH<-read.csv("data points.csv")
 plot(Tree_DBH)
