@@ -1,11 +1,23 @@
 setwd("/Users/adammcmillion/Desktop/Evolution/Tasks/Project/Data")
 read.csv("Treedataset.csv")
-Tree_DBH<-read.csv("datapoints.csv")
+Tree_DBH<-read.csv("Treedataset.csv")
 nrow(Tree_DBH)
 tail(Tree_DBH)
+pdf("DBH points.pdf")
+plot(Tree_DBH$Time, Tree_DBH$DBH1, pch=16, col="blue")
+points(Tree_DBH$Time, Tree_DBH$DBH2, pch=16, col='black')
+dev.off()
+pdf("change in DBH1 and DBH2")
+par(las=1, mar=c(3,4,1,1))
+boxplot(Tree_DBH$DBH1, Tree_DBH$DBH2, boxwex=0.25, col=c("blue","black"), border="gray", names=c("DBH1", "DBH2"))
+dev.off()
+pdf("Histogram of change in DBHs.pdf")
+par(las=1, mar=c(3,4,1,1))
+hist(Tree_DBH$DBH2-Tree_DBH$DBH1, col='black', border='white', main="", xlab="change in DBH", xlim=c(-2,1))
+dev.off()
+  
 
-
-,#Null hypothesis:Tree diameter will not increase in size as generations pass
+#Null hypothesis:Tree diameter will not increase in size as generations pass
 #Alternative Hypothesis: Tree diameter will increase in size as generations pass on!
 
 library(ggplot2)
