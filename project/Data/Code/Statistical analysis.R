@@ -1,17 +1,17 @@
 setwd("/Users/adammcmillion/Desktop/Evolution/Tasks/Project/Data")
 read.csv("Treedataset.csv")
 Tree_DBH<-read.csv("Treedataset.csv")
-nrow(Tree_DBH)
-tail(Tree_DBH)
-pdf("DBH points.pdf")
+read.csv("Meliaceae.csv")
+Meliaceae<-read.csv("Meliaceae.csv")
+pdf("Average DBH1&DBH2 points.pdf")
 plot(Tree_DBH$Time, Tree_DBH$DBH1, pch=16, col="blue")
 points(Tree_DBH$Time, Tree_DBH$DBH2, pch=16, col='black')
 dev.off()
-pdf("change in DBH1 and DBH2")
+pdf("change in DBH1 and DBH2 average")
 par(las=1, mar=c(3,4,1,1))
 boxplot(Tree_DBH$DBH1, Tree_DBH$DBH2, boxwex=0.25, col=c("blue","black"), border="gray", names=c("DBH1", "DBH2"))
 dev.off()
-pdf("Histogram of change in DBHs.pdf")
+pdf("Histogram of change in DBHs average.pdf")
 par(las=1, mar=c(3,4,1,1))
 hist(Tree_DBH$DBH2-Tree_DBH$DBH1, col='black', border='white', main="", xlab="change in DBH", xlim=c(-2,1))
 dev.off()
@@ -48,6 +48,29 @@ ggplot(Tree_DBH,aes(Time,DBH2))+
         legend.text=element_text(size=6))+
   theme(legend.position = "bottom")
 dev.off()
+pdf("Meliaceae family Dbh1.pdf") 
+ggplot(Meliaceae,aes(Time,Dbh1, colour=Cd))+
+  geom_point()+
+  facet_wrap(~Cd)+
+  theme(legend.position = "bottom")
+dev.off()
+pdf("Meliaceae family Dbh2.pdf")
+ggplot(Meliaceae,aes(Time,Dbh2, colour=Cd))+
+  geom_point()+
+  facet_wrap(~Cd)+
+  theme(legend.position = "bottom")
+dev.off()
+
+
+
+
+
+
+
+
+
+
+
  
 head(Tree_DBH)
 cor.test(Tree_DBH$DBH1, Tree_DBH$DBH2)
