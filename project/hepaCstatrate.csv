@@ -1,0 +1,85 @@
+﻿State,Year,Rate
+AK,Rate_2019,1.8
+AK,Rate_2020,1
+AL ,Rate_2019,1.9
+AL ,Rate_2020,2.1
+CA ,Rate_2019,0.5
+CA ,Rate_2020,0.1
+Co ,Rate_2019,0.8
+Co ,Rate_2020,0.2
+CT,Rate_2019,0.2
+CT,Rate_2020,0.3
+FL ,Rate_2019,2.9
+FL ,Rate_2020,6.1
+GA,Rate_2019,0.6
+GA,Rate_2020,1.3
+IA,Rate_2019,1
+IA,Rate_2020,0.1
+ID ,Rate_2019,1.2
+ID ,Rate_2020,1.6
+IL ,Rate_2019,4.8
+IL ,Rate_2020,3.6
+IN ,Rate_2019,0.3
+IN ,Rate_2020,0.5
+Ks,Rate_2019,0.7
+Ks,Rate_2020,0.3
+KY ,Rate_2019,2.9
+KY ,Rate_2020,3.2
+LA ,Rate_2019,0.2
+LA ,Rate_2020,6
+MD,Rate_2019,3.2
+MD,Rate_2020,11.9
+ME,Rate_2019,0.5
+ME,Rate_2020,0.8
+MI,Rate_2019,2.3
+MI,Rate_2020,2.2
+MN ,Rate_2019,1.2
+MN ,Rate_2020,1.2
+MO ,Rate_2019,1.1
+MO ,Rate_2020,1
+MS,Rate_2019,0.7
+MS,Rate_2020,0.4
+MT ,Rate_2019,1.6
+MT ,Rate_2020,1.6
+NC ,Rate_2019,0.2
+NC ,Rate_2020,0.5
+NE ,Rate_2019,0.5
+NE ,Rate_2020,0.4
+NH ,Rate_2019,1.5
+NH ,Rate_2020,0.4
+NJ ,Rate_2019,1.1
+NJ ,Rate_2020,1.3
+NM ,Rate_2019,0.5
+NM ,Rate_2020,0.001
+NV ,Rate_2019,1.6
+NV ,Rate_2020,1.8
+NY,Rate_2019,1.4
+NY,Rate_2020,0.7
+OH ,Rate_2019,2.4
+OH ,Rate_2020,1.6
+OK ,Rate_2019,0.6
+OK ,Rate_2020,0.5
+OR ,Rate_2019,0.5
+OR ,Rate_2020,0.7
+PA,Rate_2019,1.6
+PA,Rate_2020,1.1
+SC,Rate_2019,0.2
+SC,Rate_2020,0.1
+SD ,Rate_2019,3.2
+SD ,Rate_2020,0.8
+TN ,Rate_2019,3
+TN ,Rate_2020,2.5
+TX,Rate_2019,0.2
+TX,Rate_2020,0.1
+UT ,Rate_2019,4
+UT ,Rate_2020,3.2
+VA ,Rate_2019,1
+VA ,Rate_2020,0.2
+VT ,Rate_2019,0.8
+VT ,Rate_2020,0.3
+WA ,Rate_2019,1.1
+WA ,Rate_2020,1.4
+WI ,Rate_2019,4.4
+WI ,Rate_2020,5.3
+WV,Rate_2019,1.9
+WV,Rate_2020,1.6
